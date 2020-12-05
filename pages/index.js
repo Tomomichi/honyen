@@ -3,9 +3,14 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <>
-      <div className="flex justify-between p-8">
-        <h1 className="flex">
-          <img src="/images/logo.png" className="max-h-8" />
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap&text=honyen" rel="stylesheet" />
+      </Head>
+
+      <div className="flex justify-between p-4">
+        <h1 className="flex text-3xl">
+          <span className="font-satisfy">honyen</span>
           <small className="text-xs text-gray-500 ml-1">BETA</small>
         </h1>
         <div>
@@ -23,8 +28,9 @@ export default function Home() {
           </div>
           <div className="py-8">
             <h2 className="text-2xl sm:text-5xl font-bold mb-4">毎月1冊、読書が続く。</h2>
-            <p className="text-gray-500 text-lg sm:text-lg mb-6">
-              honyenは、毎月1冊おすすめの本が近くの図書館に届く、<br className="hidden sm:inline" />
+            <p className="text-gray-600 text-lg sm:text-lg mb-6">
+              <ruby className="font-satisfy text-xl mr-1">honyen<rt>ホニェン</rt></ruby>
+              は、毎月1冊おすすめの本が近くの図書館に届く、<br className="hidden sm:inline" />
               図書館を活用した読書習慣化サービスです。
             </p>
             <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 max-w-md rounded py-3 text-white text-center hover:opacity-75">
@@ -36,7 +42,9 @@ export default function Home() {
         <div className="mb-32">
           <div className="full-bleed bg-stripe relative mb-8">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
-              <h3 className="font-bold text-lg">honyenで読書が続く仕組み</h3>
+              <h3 className="font-bold text-lg">
+                読書のある暮らしをしよう
+              </h3>
             </div>
           </div>
 
@@ -45,10 +53,32 @@ export default function Home() {
             そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:space-x-8">
-            <div className="bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
-            <div className="bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
-            <div className="bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
+          <div className="text-center mb-8">
+            たとえば1年でこれだけの本を読むことができます。
+          </div>
+
+          <img src="/images/books.png" />
+        </div>
+
+        <div className="mb-32">
+          <div className="full-bleed bg-stripe relative mb-8">
+            <div className="container max-w-screen-lg mx-auto text-center py-4">
+              <h3 className="font-bold text-lg">
+                <ruby className="font-satisfy text-2xl mr-1">honyen<rt>ホニェン</rt></ruby>
+                で読書が続く仕組み
+              </h3>
+            </div>
+          </div>
+
+          <div className="text-center mb-8">
+            忙しくて読書の時間が取れない。仕事を優先してしまう。<br />
+            そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-8 sm:space-y-0">
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
           </div>
         </div>
 
@@ -64,10 +94,10 @@ export default function Home() {
             そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
           </div>
 
-          <div className="flex flex-col sm:flex-row space-x-8">
-            <div className="flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
-            <div className="flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
-            <div className="flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
+          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-8 sm:space-y-0">
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700"></div>
           </div>
         </div>
 
@@ -83,14 +113,14 @@ export default function Home() {
             そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
           </div>
 
-          <div className="flex flex-col sm:flex-row space-x-8">
-            <div className="flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
+          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-8 sm:space-y-0">
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
               <img src="/images/avatar1.png" className="inline object-cover object-top w-16 h-16 rounded-full border m-4" />
             </div>
-            <div className="flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
               <img src="/images/avatar2.png" className="inline object-cover object-top w-16 h-16 rounded-full border m-4" />
             </div>
-            <div className="flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
+            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
               <img src="/images/avatar3.png" className="inline object-cover object-top w-16 h-16 rounded-full border m-4" />
             </div>
           </div>
@@ -100,7 +130,7 @@ export default function Home() {
       <footer className="border-t border-gray-300 flex justify-between p-4 text-gray-500">
         <div className="flex items-center">
           <div className="flex mr-4">
-            <img src="/images/logo.png" className="max-h-8" />
+            <span className="font-satisfy text-gray-900 text-3xl">honyen</span>
             <small className="text-xs text-gray-500 ml-1">BETA</small>
           </div>
           <div>
@@ -113,6 +143,9 @@ export default function Home() {
 
 
       <style jsx>{`
+        .font-satisfy {
+          font-family: 'Satisfy', cursive;
+        }
         .full-bleed {
           width: 100vw;
           margin-left: 50%;
