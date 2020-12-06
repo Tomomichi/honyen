@@ -2,10 +2,11 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <>
+    <div className="body">
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap&text=honyen" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
 
       <div className="flex justify-between p-4">
@@ -43,16 +44,57 @@ export default function Home() {
           <div className="full-bleed bg-stripe relative mb-8">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">
-                読書のある暮らしをしよう
+                <ruby className="font-satisfy text-2xl mr-1">honyen<rt>ホニェン</rt></ruby>
+                で読書が続く仕組み
               </h3>
             </div>
           </div>
 
-          <div className="sm:text-center mb-8">
-            忙しくて読書の時間が取れない。でも本当はもっと本を読みたい。
+          <div className="sm:text-center mb-12">
+            忙しくて読書の時間が取れない。でも本当はもっと本を読んでみたい。
             <br className="hidden sm:inline" />
             honyen(ホニェン)は、そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
           </div>
+
+          <div className="mb-32 flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-0">
+            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Point.1</div>
+              <img src="/images/avatar1.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <h5 className="font-bold text-lg text-center">
+                おすすめの本が自動で決まる
+                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
+              </h5>
+              <p className="text-sm text-gray-700">
+                毎月月初に、おすすめの本が自動でセレクトされます。
+                もし本が合わない場合は他の候補にチェンジすることもできます。
+              </p>
+            </div>
+            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Point.2</div>
+              <img src="/images/avatar2.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <h5 className="font-bold text-lg text-center">
+                近くの図書館まで本が届く
+                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
+              </h5>
+              <p className="text-sm text-gray-700">
+                本が確定したら、あらかじめ登録しておいた図書館で自動予約されます。
+                いつもの図書館で本を受け取りましょう。
+              </p>
+            </div>
+            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Point.3</div>
+              <img src="/images/avatar3.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <h5 className="font-bold text-lg text-center">
+                返却までの期限が決まる
+                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
+              </h5>
+              <p className="text-sm text-gray-700">
+                借りたあとは通常の図書館利用と同じように、きちんと期限内に返却してください。
+                延滞が続くとサービスの利用も停止されます。
+              </p>
+            </div>
+          </div>
+
 
           <div className="text-center mb-8">
             たとえば1年でこれだけの本を読むことができます。
@@ -62,58 +104,6 @@ export default function Home() {
 
         </div>
 
-        <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-8">
-            <div className="container max-w-screen-lg mx-auto text-center py-4">
-              <h3 className="font-bold text-lg">
-                <ruby className="font-satisfy text-2xl mr-1">honyen<rt>ホニェン</rt></ruby>
-                で読書が続く仕組み
-              </h3>
-            </div>
-          </div>
-
-          <div className="sm:text-center mb-12">
-            忙しくて読書の時間が取れない。仕事を優先してしまう。
-            <br className="hidden sm:inline" />
-            そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
-          </div>
-
-          <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-0">
-            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.1</div>
-              <h5 className="font-bold text-lg text-center">
-                おすすめ本のセレクト
-                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
-              </h5>
-              <p className="sm:text-sm text-gray-700">
-                毎月1冊、あなたのためにおすすめの本をセレクトして提案します。
-                もし本が合わなかった場合は他の候補にチェンジすることもできます。
-              </p>
-            </div>
-            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.2</div>
-              <h5 className="font-bold text-lg text-center">
-                近くの図書館で受け取れる
-                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
-              </h5>
-              <p className="text-sm text-gray-700">
-                本が確定したら、あらかじめ登録しておいた図書館で本が自動予約されます。
-                いつもの図書館で本を受け取りましょう。
-              </p>
-            </div>
-            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.3</div>
-              <h5 className="font-bold text-lg text-center">
-                本を読んで返却
-                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
-              </h5>
-              <p className="text-sm text-gray-700">
-                借りたあとは通常の図書館利用と同じように、きちんと期限内に返却してください。
-                期限があることで読書の動機づけになります。
-              </p>
-            </div>
-          </div>
-        </div>
 
         <div className="mb-32">
           <div className="full-bleed bg-stripe relative mb-8">
@@ -219,6 +209,9 @@ export default function Home() {
 
 
       <style jsx>{`
+        .body {
+          font-family: 'Noto Sans JP', sans-serif;
+        }
         .font-satisfy {
           font-family: 'Satisfy', cursive;
         }
@@ -251,6 +244,6 @@ export default function Home() {
           z-index: -1;
         }
       `}</style>
-    </>
+    </div>
   )
 }
