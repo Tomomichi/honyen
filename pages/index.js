@@ -191,7 +191,70 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="mb-32">
+          <div className="full-bleed bg-stripe relative mb-8">
+            <div className="container max-w-screen-lg mx-auto text-center py-4">
+              <h3 className="font-bold text-lg">料金プラン</h3>
+            </div>
+          </div>
+
+          <div className="sm:text-center mb-8">
+            現在ベータ版のため、REGULARプランも無料でご利用いただけます。
+            <br className="hidden sm:inline" />
+            正式リリースまではクレジットカード登録も不要です。
+          </div>
+
+          <div className="flex flex-col sm:flex-row justify-center sm:space-x-8 space-y-8 sm:space-y-0">
+            <div className="flex-1 text-center border-2 border-gray-700 p-8">
+              <p className="text-2xl mb-2">FREE</p>
+              <h6 className="font-bold text-gray-400 mb-8">無料</h6>
+
+              <ul className="text-left leading-8 mb-8">
+                <li><span className="mr-2">✅</span>おすすめ本のセレクト</li>
+                <li className="text-gray-400"><span className="mr-2">□</span>図書館への自動予約</li>
+                <li className="text-gray-400"><span className="mr-2">□</span>本のチェンジ</li>
+                <li className="text-gray-400"><span className="mr-2">□</span>セレクト条件のカスタマイズ</li>
+              </ul>
+
+              <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-full sm:max-w-sm rounded py-3 text-white text-center hover:opacity-75">
+                無料で試してみる
+              </div>
+            </div>
+
+            <div className="flex-1 text-center border-2 border-gray-700 p-8 bg-gray-100">
+              <p className="text-2xl mb-2">REGULAR</p>
+              <h6 className="font-bold text-gray-400 mb-8">
+                <s className="mr-2">350円/月</s>
+                <span className="text-red-600">ベータ期間中無料</span>
+              </h6>
+
+              <ul className="text-left leading-8 mb-8">
+                <li><span className="mr-2">✅</span>おすすめ本のセレクト</li>
+                <li><span className="mr-2">✅</span>図書館への自動予約</li>
+                <li><span className="mr-2">✅</span>本のチェンジ</li>
+                <li className="text-gray-400"><span className="mr-2">□</span>セレクト条件のカスタマイズ</li>
+              </ul>
+
+              <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-full sm:max-w-sm rounded py-3 text-white text-center hover:opacity-75">
+                無料で試してみる
+              </div>
+            </div>
+
+            <div className="flex-1 text-center border-2 border-gray-700 p-8 bg-gray-200">
+              <p className="text-2xl mb-2">PRO</p>
+              <h6 className="font-bold text-gray-400 mb-8">準備中</h6>
+              <ul className="text-left leading-8">
+                <li><span className="mr-2">✅</span>おすすめ本のセレクト</li>
+                <li><span className="mr-2">✅</span>図書館への自動予約</li>
+                <li><span className="mr-2">✅</span>本のチェンジ</li>
+                <li><span className="mr-2">✅</span>セレクト条件のカスタマイズ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+
 
       <footer className="border-t border-gray-300 flex justify-between p-4 text-gray-500">
         <div className="flex items-center">
