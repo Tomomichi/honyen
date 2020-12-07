@@ -41,11 +41,11 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-8">
+          <div className="full-bleed bg-stripe relative mb-12">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">
                 <ruby className="font-satisfy text-2xl mr-1">honyen<rt>ホニェン</rt></ruby>
-                で読書が続く仕組み
+                は、読書を習慣化する「仕組み」です
               </h3>
             </div>
           </div>
@@ -56,22 +56,33 @@ export default function Home() {
             honyen(ホニェン)は、そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
           </div>
 
-          <div className="mb-32 flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-0">
+          <div className="mb-32 flex flex-col sm:flex-row sm:space-x-4 space-y-10 sm:space-y-0">
             <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Point.1</div>
-              <img src="/images/avatar1.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.1</div>
+              <svg className="w-12 h-12 mx-auto mb-4" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 17h16v2H4zm13-6.17L15.38 12 12 7.4 8.62 12 7 10.83 9.08 8H4v6h16V8h-5.08z" opacity=".3"></path>
+                <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 12 7.4l3.38 4.6L17 10.83 14.92 8H20v6z"></path>
+              </svg>
               <h5 className="font-bold text-lg text-center">
-                おすすめの本が自動で決まる
+                おすすめの本をセレクト
                 <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
               </h5>
               <p className="text-sm text-gray-700">
                 毎月月初に、おすすめの本が自動でセレクトされます。
-                もし本が合わない場合は他の候補にチェンジすることもできます。
+                事前に確認して、合わない場合は他の本にチェンジすることもできます。
               </p>
             </div>
+
+            <div className="flex items-center">
+              <svg className="w-6 h-6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" tabIndex="-1" title="KeyboardArrowRight" data-ga-event-category="material-icons" data-ga-event-action="click" data-ga-event-label="KeyboardArrowRight"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+            </div>
+
             <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Point.2</div>
-              <img src="/images/avatar2.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.2</div>
+              <svg className="w-12 h-12 mx-auto mb-4" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zM3 18.5V7c1.1-.35 2.3-.5 3.5-.5 1.34 0 3.13.41 4.5.99v11.5C9.63 18.41 7.84 18 6.5 18c-1.2 0-2.4.15-3.5.5zm18 0c-1.1-.35-2.3-.5-3.5-.5-1.34 0-3.13.41-4.5.99V7.49c1.37-.59 3.16-.99 4.5-.99 1.2 0 2.4.15 3.5.5v11.5z"></path>
+                <path d="M11 7.49c-1.37-.58-3.16-.99-4.5-.99-1.2 0-2.4.15-3.5.5v11.5c1.1-.35 2.3-.5 3.5-.5 1.34 0 3.13.41 4.5.99V7.49z" opacity=".3"></path>
+              </svg>
               <h5 className="font-bold text-lg text-center">
                 近くの図書館まで本が届く
                 <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
@@ -81,16 +92,24 @@ export default function Home() {
                 いつもの図書館で本を受け取りましょう。
               </p>
             </div>
+
+            <div className="flex items-center">
+              <svg className="w-6 h-6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" tabIndex="-1" title="KeyboardArrowRight" data-ga-event-category="material-icons" data-ga-event-action="click" data-ga-event-label="KeyboardArrowRight"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+            </div>
+
             <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Point.3</div>
-              <img src="/images/avatar3.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.3</div>
+              <svg className="w-12 h-12 mx-auto mb-4" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 5h14v2H5z" opacity=".3"></path>
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V9h14v10zm0-12H5V5h14v2zm-2.51 4.53l-1.06-1.06-4.87 4.87-2.11-2.11-1.06 1.06 3.17 3.17z"></path>
+              </svg>
               <h5 className="font-bold text-lg text-center">
-                返却までの期限が決まる
+                返却期限までに本を返す
                 <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
               </h5>
               <p className="text-sm text-gray-700">
-                借りたあとは通常の図書館利用と同じように、きちんと期限内に返却してください。
-                延滞が続くとサービスの利用も停止されます。
+                借りたあとは通常の図書館利用と同じように、期限内に読んで本を返却してください。
+                期限が決まることも読書の動機づけになります。
               </p>
             </div>
           </div>
@@ -106,7 +125,7 @@ export default function Home() {
 
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-8">
+          <div className="full-bleed bg-stripe relative mb-12">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">利用の流れ</h3>
             </div>
@@ -156,27 +175,49 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-8">
+          <div className="full-bleed bg-stripe relative mb-12">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">ユーザーの声</h3>
             </div>
           </div>
 
-          <div className="sm:text-center mb-8">
-            忙しくて読書の時間が取れない。仕事を優先してしまう。
-            <br className="hidden sm:inline" />
-            そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
+          <div className="sm:text-center mb-12">
+            honyenを始めたユーザーの60%以上が、毎月1冊以上の読書を半年以上継続できています。
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-8 sm:space-y-0">
-            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
-              <img src="/images/avatar1.png" className="inline object-cover object-top w-16 h-16 rounded-full border m-4" />
+          <div className="mb-32 flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-0">
+            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <img src="/images/avatar1.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <h5 className="font-bold text-lg text-center">
+                おすすめ本がセレクトされる
+                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
+              </h5>
+              <p className="text-sm text-gray-700">
+                毎月月初に、おすすめの本が自動でセレクトされます。
+                もし本が合わない場合は他の候補にチェンジすることもできます。
+              </p>
             </div>
-            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
-              <img src="/images/avatar2.png" className="inline object-cover object-top w-16 h-16 rounded-full border m-4" />
+            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <img src="/images/avatar2.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <h5 className="font-bold text-lg text-center">
+                近くの図書館まで本が届く
+                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
+              </h5>
+              <p className="text-sm text-gray-700">
+                本が確定したら、あらかじめ登録しておいた図書館で自動予約されます。
+                いつもの図書館で本を受け取りましょう。
+              </p>
             </div>
-            <div className="sm:flex-1 bg-shadow bg-white relative h-24 border-2 border-gray-700">
-              <img src="/images/avatar3.png" className="inline object-cover object-top w-16 h-16 rounded-full border m-4" />
+            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <img src="/images/avatar3.png" className="mx-auto object-cover object-top w-48 h-32 -mt-4 mb-4" />
+              <h5 className="font-bold text-lg text-center">
+                返却期限までに本を返す
+                <div className="w-32 border-b-2 mx-auto mt-2 mb-4"></div>
+              </h5>
+              <p className="text-sm text-gray-700">
+                借りたあとは通常の図書館利用と同じように、期限内に読んで本を返却してください。
+                期限が決まることも読書の動機づけになります。
+              </p>
             </div>
           </div>
 
@@ -193,28 +234,40 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-8">
+          <div className="full-bleed bg-stripe relative mb-12">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">料金プラン</h3>
             </div>
           </div>
 
-          <div className="sm:text-center mb-8">
+          <div className="sm:text-center mb-12">
             現在ベータ版のため、REGULARプランも無料でご利用いただけます。
             <br className="hidden sm:inline" />
             正式リリースまではクレジットカード登録も不要です。
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center sm:space-x-8 space-y-8 sm:space-y-0">
-            <div className="flex-1 text-center border-2 border-gray-700 p-8">
+            <div className="sm:flex-1 bg-shadow bg-white relative text-center border-2 border-gray-700 p-8">
               <p className="text-2xl mb-2">FREE</p>
-              <h6 className="font-bold text-gray-400 mb-8">無料</h6>
+              <h6 className="text-gray-400 mb-8">無料</h6>
 
               <ul className="text-left leading-8 mb-8">
-                <li><span className="mr-2">✅</span>おすすめ本のセレクト</li>
-                <li className="text-gray-400"><span className="mr-2">□</span>図書館への自動予約</li>
-                <li className="text-gray-400"><span className="mr-2">□</span>本のチェンジ</li>
-                <li className="text-gray-400"><span className="mr-2">□</span>セレクト条件のカスタマイズ</li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  おすすめ本のセレクト
+                </li>
+                <li className="text-gray-400">
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
+                  図書館への自動予約
+                </li>
+                <li className="text-gray-400">
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
+                  本のチェンジ
+                </li>
+                <li className="text-gray-400">
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
+                  セレクト条件のカスタマイズ
+                </li>
               </ul>
 
               <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-full sm:max-w-sm rounded py-3 text-white text-center hover:opacity-75">
@@ -222,18 +275,30 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex-1 text-center border-2 border-gray-700 p-8 bg-gray-100">
+            <div className="sm:flex-1 bg-shadow bg-white relative text-center border-2 border-gray-700 p-8 bg-gray-100">
               <p className="text-2xl mb-2">REGULAR</p>
-              <h6 className="font-bold text-gray-400 mb-8">
+              <h6 className="text-gray-400 mb-8">
                 <s className="mr-2">350円/月</s>
-                <span className="text-red-600">ベータ期間中無料</span>
+                <span className="font-bold text-red-600">ベータ期間中無料</span>
               </h6>
 
               <ul className="text-left leading-8 mb-8">
-                <li><span className="mr-2">✅</span>おすすめ本のセレクト</li>
-                <li><span className="mr-2">✅</span>図書館への自動予約</li>
-                <li><span className="mr-2">✅</span>本のチェンジ</li>
-                <li className="text-gray-400"><span className="mr-2">□</span>セレクト条件のカスタマイズ</li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  おすすめ本のセレクト
+                </li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  図書館への自動予約
+                </li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  本のチェンジ
+                </li>
+                <li className="text-gray-400">
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg>
+                  セレクト条件のカスタマイズ
+                </li>
               </ul>
 
               <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-full sm:max-w-sm rounded py-3 text-white text-center hover:opacity-75">
@@ -241,16 +306,69 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex-1 text-center border-2 border-gray-700 p-8 bg-gray-200">
+            <div className="sm:flex-1 bg-shadow bg-white relative text-center border-2 border-gray-700 p-8">
               <p className="text-2xl mb-2">PRO</p>
-              <h6 className="font-bold text-gray-400 mb-8">準備中</h6>
+              <h6 className="text-gray-400 mb-8">（準備中）</h6>
               <ul className="text-left leading-8">
-                <li><span className="mr-2">✅</span>おすすめ本のセレクト</li>
-                <li><span className="mr-2">✅</span>図書館への自動予約</li>
-                <li><span className="mr-2">✅</span>本のチェンジ</li>
-                <li><span className="mr-2">✅</span>セレクト条件のカスタマイズ</li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  おすすめ本のセレクト
+                </li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  図書館への自動予約
+                </li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  本のチェンジ
+                </li>
+                <li>
+                  <svg className="w-5 h-5 mr-1 inline align-text-bottom fill-current text-green-500" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                  セレクト条件のカスタマイズ
+                </li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        <div className="mb-32">
+          <div className="full-bleed bg-stripe relative mb-12">
+            <div className="container max-w-screen-lg mx-auto text-center py-4">
+              <h3 className="font-bold text-lg">よくある質問</h3>
+            </div>
+          </div>
+
+          <div className="sm:text-center mb-12">
+            honyenについてよくいただく質問をまとめました。
+            <br className="hidden sm:inline" />
+            ここにない質問やご要望などがあれば、お気軽に運営までお問い合わせください。
+          </div>
+
+          <div className="space-y-8">
+            <details className="relative bg-white bg-shadow">
+              <summary className="relative p-6 pr-12 border-2 border-gray-700 cursor-pointer">どうして本をおすすめするだけではなく、図書館での予約まで自動化するのですか？</summary>
+              <div className="p-6 border-r-2 border-b-2 border-l-2 border-gray-700 bg-gray-100">
+                <p>これが回答です</p>
+              </div>
+            </details>
+            <details className="relative bg-white bg-shadow">
+              <summary className="relative p-6 pr-12 border-2 border-gray-700 cursor-pointer">どんな本がセレクトされるのですか？</summary>
+              <div className="p-6 border-r-2 border-b-2 border-l-2 border-gray-700 bg-gray-100">
+                <p>これが回答です</p>
+              </div>
+            </details>
+            <details className="relative bg-white bg-shadow">
+              <summary className="relative p-6 pr-12 border-2 border-gray-700 cursor-pointer">セレクトされた本が気に入らない場合はどうなりますか？</summary>
+              <div className="p-6 border-r-2 border-b-2 border-l-2 border-gray-700 bg-gray-100">
+                <p>これが回答です</p>
+              </div>
+            </details>
+            <details className="relative bg-white bg-shadow">
+              <summary className="relative p-6 pr-12 border-2 border-gray-700 hover:opacity-75 cursor-pointer">本当に忙しくてどうしても読めない月はどうしたらいいですか？</summary>
+              <div className="p-6 border-r-2 border-b-2 border-l-2 border-gray-700 bg-gray-100">
+                <p>これが回答です</p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -277,6 +395,20 @@ export default function Home() {
         }
         .font-satisfy {
           font-family: 'Satisfy', cursive;
+        }
+        summary::-webkit-details-marker {
+          position: absolute;
+          color: transparent;
+        }
+        summary:after {
+          content: '+';
+          position: absolute;
+          top: 50%;
+          right: 1.5rem;
+          margin-top: -12px;
+        }
+        details[open] summary:after {
+          content: '-';
         }
         .full-bleed {
           width: 100vw;
