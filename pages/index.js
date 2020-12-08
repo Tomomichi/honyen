@@ -2,24 +2,18 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="body">
+    <div className="body text-gray-700">
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap&text=honyen" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <div className="flex justify-between p-4">
+      <div className="container max-w-screen-lg mx-auto p-4">
         <h1 className="flex text-3xl">
           <span className="font-satisfy">honyen</span>
-          <small className="text-xs text-gray-500 ml-1">BETA</small>
+          <small className="text-xs text-gray-400 ml-1">BETA</small>
         </h1>
-        <div>
-          <ul className="flex space-x-4">
-            <li>Login</li>
-            <li>Signup</li>
-          </ul>
-        </div>
       </div>
 
       <div className="container max-w-screen-lg mx-auto px-4">
@@ -41,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-12">
+          <div className="full-bleed bg-stripe relative mb-12 px-4">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">
                 <ruby className="font-satisfy text-2xl mr-1">honyen<rt>ホニェン</rt></ruby>
@@ -51,14 +45,14 @@ export default function Home() {
           </div>
 
           <div className="sm:text-center mb-12">
-            忙しくて読書の時間が取れない。でも本当はもっと本を読んでみたい。
+            忙しくて読書の時間が取れない。でも本当はもっと本を読みたい。
             <br className="hidden sm:inline" />
             honyen(ホニェン)は、そんな忙しい現代人がムリせず読書を習慣化できるサービスです。
           </div>
 
-          <div className="mb-32 flex flex-col sm:flex-row sm:space-x-4 space-y-10 sm:space-y-0">
-            <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.1</div>
+          <div className="mb-32 flex flex-col sm:flex-row sm:space-x-4 space-y-6 sm:space-y-0">
+            <div className="p-6 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -4, top: -17}}>Step.1</div>
               <svg className="w-12 h-12 mx-auto mb-4" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M4 17h16v2H4zm13-6.17L15.38 12 12 7.4 8.62 12 7 10.83 9.08 8H4v6h16V8h-5.08z" opacity=".3"></path>
                 <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 12 7.4l3.38 4.6L17 10.83 14.92 8H20v6z"></path>
@@ -73,12 +67,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex items-center">
-              <svg className="w-6 h-6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" tabIndex="-1" title="KeyboardArrowRight" data-ga-event-category="material-icons" data-ga-event-action="click" data-ga-event-label="KeyboardArrowRight"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+            <div className="flex items-center justify-center">
+              <svg className="w-6 h-6 hidden sm:block" focusable="false" viewBox="0 0 24 24" aria-hidden="true" tabIndex="-1" title="KeyboardArrowRight" data-ga-event-category="material-icons" data-ga-event-action="click" data-ga-event-label="KeyboardArrowRight"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+              <svg className="w-6 h-6 block sm:hidden" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
             </div>
 
             <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.2</div>
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -4, top: -17}}>Step.2</div>
               <svg className="w-12 h-12 mx-auto mb-4" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zM3 18.5V7c1.1-.35 2.3-.5 3.5-.5 1.34 0 3.13.41 4.5.99v11.5C9.63 18.41 7.84 18 6.5 18c-1.2 0-2.4.15-3.5.5zm18 0c-1.1-.35-2.3-.5-3.5-.5-1.34 0-3.13.41-4.5.99V7.49c1.37-.59 3.16-.99 4.5-.99 1.2 0 2.4.15 3.5.5v11.5z"></path>
                 <path d="M11 7.49c-1.37-.58-3.16-.99-4.5-.99-1.2 0-2.4.15-3.5.5v11.5c1.1-.35 2.3-.5 3.5-.5 1.34 0 3.13.41 4.5.99V7.49z" opacity=".3"></path>
@@ -93,12 +88,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex items-center">
-              <svg className="w-6 h-6" focusable="false" viewBox="0 0 24 24" aria-hidden="true" tabIndex="-1" title="KeyboardArrowRight" data-ga-event-category="material-icons" data-ga-event-action="click" data-ga-event-label="KeyboardArrowRight"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+            <div className="flex items-center justify-center">
+              <svg className="w-6 h-6 hidden sm:block" focusable="false" viewBox="0 0 24 24" aria-hidden="true" tabIndex="-1" title="KeyboardArrowRight" data-ga-event-category="material-icons" data-ga-event-action="click" data-ga-event-label="KeyboardArrowRight"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+              <svg className="w-6 h-6 block sm:hidden" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
             </div>
 
             <div className="p-8 sm:flex-1 bg-shadow bg-white relative border-2 border-gray-700">
-              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -12, top: -17}}>Step.3</div>
+              <div className="absolute font-satisfy text-2xl bg-white pr-2" style={{left: -4, top: -17}}>Step.3</div>
               <svg className="w-12 h-12 mx-auto mb-4" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 5h14v2H5z" opacity=".3"></path>
                 <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V9h14v10zm0-12H5V5h14v2zm-2.51 4.53l-1.06-1.06-4.87 4.87-2.11-2.11-1.06 1.06 3.17 3.17z"></path>
@@ -125,7 +121,7 @@ export default function Home() {
 
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-12">
+          <div className="full-bleed bg-stripe relative mb-12 px-4">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">利用の流れ</h3>
             </div>
@@ -175,7 +171,7 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-12">
+          <div className="full-bleed bg-stripe relative mb-12 px-4">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">ユーザーの声</h3>
             </div>
@@ -234,7 +230,7 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-12">
+          <div className="full-bleed bg-stripe relative mb-12 px-4">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">料金プラン</h3>
             </div>
@@ -332,7 +328,7 @@ export default function Home() {
         </div>
 
         <div className="mb-32">
-          <div className="full-bleed bg-stripe relative mb-12">
+          <div className="full-bleed bg-stripe relative mb-12 px-4">
             <div className="container max-w-screen-lg mx-auto text-center py-4">
               <h3 className="font-bold text-lg">よくある質問</h3>
             </div>
@@ -348,7 +344,16 @@ export default function Home() {
             <details className="relative bg-white bg-shadow">
               <summary className="relative p-6 pr-12 border-2 border-gray-700 cursor-pointer">どうして本をおすすめするだけではなく、図書館での予約まで自動化するのですか？</summary>
               <div className="p-6 border-r-2 border-b-2 border-l-2 border-gray-700 bg-gray-100">
-                <p>これが回答です</p>
+                <p>
+                  本がおすすめされただけで読める方はもちろんそれでも大丈夫です。その場合無料のFREEプランをご利用ください。
+                </p>
+                <p>
+                  しかし多くの場合、実際に読書への行動を起こすところに大きなギャップがあります。
+                  図書館への予約まで自動化・半強制化することで、めんどくささの壁を超えて読書を始めるきっかけを作ることができます。
+                </p>
+                <p>
+                  実際に予約自動化まで行うことで、読書継続率に約30%程度も違いが出ることがわかっています。
+                </p>
               </div>
             </details>
             <details className="relative bg-white bg-shadow">
@@ -364,7 +369,7 @@ export default function Home() {
               </div>
             </details>
             <details className="relative bg-white bg-shadow">
-              <summary className="relative p-6 pr-12 border-2 border-gray-700 hover:opacity-75 cursor-pointer">本当に忙しくてどうしても読めない月はどうしたらいいですか？</summary>
+              <summary className="relative p-6 pr-12 border-2 border-gray-700 hover:opacity-75 cursor-pointer">どうしても読めない月がある場合はどうしたらいいですか？</summary>
               <div className="p-6 border-r-2 border-b-2 border-l-2 border-gray-700 bg-gray-100">
                 <p>これが回答です</p>
               </div>
@@ -374,18 +379,20 @@ export default function Home() {
       </div>
 
 
-      <footer className="border-t border-gray-300 flex justify-between p-4 text-gray-500">
-        <div className="flex items-center">
-          <div className="flex mr-4">
-            <span className="font-satisfy text-gray-900 text-3xl">honyen</span>
-            <small className="text-xs text-gray-500 ml-1">BETA</small>
+      <footer className="border-t border-gray-300">
+        <div className="container max-w-screen-lg mx-auto p-4 text-center flex flex-col sm:flex-row justify-between p-4 text-gray-500">
+          <div className="flex flex-col sm:flex-row items-center">
+            <div className="flex mr-4">
+              <span className="font-satisfy text-gray-900 text-3xl">honyen</span>
+              <small className="text-xs text-gray-400 ml-1">BETA</small>
+            </div>
+            <div className="text-sm text-gray-400 mt-2 sm:mt-0">
+              produced by
+              <a className="ml-1 text-gray-700" href="https://notsobad.jp" target="_blank">NOT SO BAD</a>
+            </div>
           </div>
-          <div>
-            produced by
-            <a className="ml-1" href="https://notsobad.jp" target="_blank">NOT SO BAD</a>
-          </div>
+          <div className="text-sm text-gray-400 mt-4 sm:mt-0">Copyright 2020 All rights reserved.</div>
         </div>
-        <div>Copyright 2020 All rights reserved.</div>
       </footer>
 
 
