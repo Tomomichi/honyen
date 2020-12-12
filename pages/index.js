@@ -19,11 +19,10 @@ export default function Home() {
       <div className="container max-w-screen-lg mx-auto px-4">
         <div className="flex items-center flex-col sm:flex-row sm:space-x-4 sm:py-8 mb-16">
           <div className="flex-1 relative">
-            { false && <div className="z-0 absolute w-64 h-64 bg-gray-100 rounded-full hidden sm:block" style={{top:90, left:-70}}></div> }
-            <img src="/images/top.png" className="mx-auto max-w-xs sm:mt-12 relative z-10" />
+            { false && <div className="z-0 absolute w-72 h-72 bg-gray-100 rounded-full hidden sm:block" style={{top:-20, left:"-45%"}}></div> }
+            <img src="/images/top.png" className="max-h-36 sm:max-h-44 mt-4 sm:mt-16 relative z-10" />
           </div>
-          <div className="py-8 relative">
-            { false && <div className="z-0 absolute w-24 h-24 bg-gray-100 rounded-full hidden sm:block" style={{top:0, right:-100}}></div> }
+          <div className="flex-1 py-8 relative">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">毎月1冊、読書が続く。</h2>
             <p className="text-gray-600 mb-8">
               <ruby className="font-satisfy text-xl mr-1">honyen<rt>ホニェン</rt></ruby>
